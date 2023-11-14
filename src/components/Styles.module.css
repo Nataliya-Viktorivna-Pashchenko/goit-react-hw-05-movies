@@ -1,0 +1,45 @@
+.header{
+    padding: 10px 0 15px;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+            0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+            margin-bottom: 10px;
+}
+.headerLink{
+    margin: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+.headerLink:hover {
+    color: rgb(201, 77, 147);
+}
+
+.moviesTrending{
+    font-size: 30px;
+    margin-top: 15px;
+}
+.MovieList {
+    font-size: 15px;
+    
+}
+.SearchFormButton {
+    height: 20px;
+}
+.SearchForm {
+    margin-top: 15px;
+}
+.AboutMovie{
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+}
+.Poster {
+    width: 200px;
+    height: 300px;
+}
+.AddInfo{
+    border: 2px solid rgba(197, 191, 184, 0.544);
+    padding-bottom: 15px;
+}
+.CastPhoto{
+    width: 90px;
+    height: 120px;
+}
