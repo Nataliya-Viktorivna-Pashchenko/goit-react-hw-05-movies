@@ -1,11 +1,11 @@
 import { useEffect, useState, useRef } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { NavLink, Link, useParams, useLocation } from 'react-router-dom';
-import { AboutMovie } from '../components/AboutMovie';
-import { getSingleMovie } from '../components/Api';
+import { AboutMovie } from '../components/AboutMovie/AboutMovie';
+import { getSingleMovie } from '../components/Api/Api';
 import MovieReviews from './MovieReviews';
 import MovieCast from './MovieCast';
-import Loader from 'components/Loader';
+import Loader from 'components/Loader/Loader';
 import { Suspense } from 'react';
 import css from 'components/Styles.module.css'
 

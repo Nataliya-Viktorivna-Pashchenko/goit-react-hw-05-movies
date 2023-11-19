@@ -1,9 +1,9 @@
-import { Searchbar } from 'components/Searchbar';
+import { Searchbar } from 'components/Searchbar/Searchbar';
 import { useState, useEffect } from 'react';
 import { Notify } from "notiflix";
-import { getMoviesBySearch } from 'components/Api';
-import { MovieList } from 'components/MovieList';
-import  Loader  from 'components/Loader';
+import { getMoviesBySearch } from 'components/Api/Api';
+import { MovieList } from 'components/MovieList/MovieList';
+import  Loader  from 'components/Loader/Loader';
 import { useSearchParams } from 'react-router-dom';
 
 const Movies = () => {

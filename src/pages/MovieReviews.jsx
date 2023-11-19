@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { getReviews } from 'components/Api';
+import { getReviews } from 'components/Api/Api';
 import { useParams } from 'react-router-dom';
-import  Loader  from 'components/Loader';
+import  Loader  from 'components/Loader/Loader';
 import { Notify } from "notiflix";
-import { Reviews } from 'components/Reviews';
+import { Reviews } from 'components/Reviews/Reviews';
 
 const MovieReviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -29,7 +29,6 @@ const MovieReviews = () => {
     }
     getMovieReviews();
   }, [id]);
-console.log(reviews);
   return (
     <div>
       {isLoading && <Loader />}

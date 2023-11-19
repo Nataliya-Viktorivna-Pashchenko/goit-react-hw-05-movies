@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { getCast } from 'components/Api';
+import { getCast } from 'components/Api/Api';
 import { useParams } from 'react-router-dom';
-import  Loader  from 'components/Loader';
-import { Casts } from 'components/Cast';
+import  Loader  from 'components/Loader/Loader';
+import { Casts } from 'components/Cast/Cast';
 
 const MovieCast = () => {
   const [casts, setCasts] = useState([]);
@@ -26,7 +26,6 @@ const MovieCast = () => {
 
     getCasts();
   }, [id]);
-console.log(casts);
   return (
     <>
       {isLoading && <Loader />}
